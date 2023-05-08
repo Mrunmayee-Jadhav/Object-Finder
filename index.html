@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Object Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="background.png">
+        <center>
+          
+        <h1 class="btn btn-success heading">Object Finder<br>
+        The input name which you will give should match the nane present in COCOssd model then only it will detect <br>   Refresh the page if you want to find other objects</h1> <br>
+      
+        <input placeholder="Enter the name of object" id="input"><br>
+        <button class="btn btn-danger" onclick="start();">START</button>
+        <br><h2 class="btn btn-primary" id="status"></h2>
+        <h2 class="btn btn-warning" id="object"></h2><br>
+        <h2 class="btn btn-info" id="found"></h2>
+        </center>
+        <h4 id="footer">Developed by Mrunmayee</h4>
+
+        <script src="main.js"></script>
+    </body>
+</html>
